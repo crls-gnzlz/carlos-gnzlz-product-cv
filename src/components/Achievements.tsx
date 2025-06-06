@@ -15,7 +15,7 @@ const Achievements = () => {
     },
     {
       icon: TrendingUp,
-      title: "Product-Led Growth Implementation",
+      title: "Product-Led Growth",
       description: "Leading and implementing a product-led growth (PLG) strategy to transition from a service-based company to a product-driven business with a 90%+ revenue based on recurrent subscriptions."
     }
   ];

@@ -17,7 +17,7 @@ const Skills = () => {
     },
     {
       category: "Engagement & Activation",
-      skills: ["KPI-driven", "NPS", "Churn", "PLG Tactics"]
+      skills: ["KPI-driven", "NPS", "Onboarding completion", "PLG Tactics", "Scoring systems"]
     },
     {
       category: "Analytics",
@@ -25,7 +25,7 @@ const Skills = () => {
     },
     {
       category: "Docs & Content",
-      skills: ["Grav CMS", "Sendgrid for Onboarding"]
+      skills: ["Grav CMS", "Sendgrid for Onboarding", "Webinars", "Tutorials", "Presentations"]
     }
   ];
 

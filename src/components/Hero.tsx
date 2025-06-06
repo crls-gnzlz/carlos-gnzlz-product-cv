@@ -3,13 +3,13 @@ import { MapPin, Mail, Linkedin } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="hero" className="min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-background to-secondary/20 pb-4">
+    <section id="hero" className="min-h-[45vh] flex items-center justify-center bg-gradient-to-br from-background to-secondary/20 pb-2">
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-3 animate-fade-in">
+          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-2 animate-fade-in">
             Carlos González
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-4 animate-fade-in">
+          <p className="text-lg md:text-xl text-muted-foreground mb-3 animate-fade-in">
             Digital Product Leader – B2B SaaS & PLG Expert
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-muted-foreground animate-fade-in">
