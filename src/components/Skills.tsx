@@ -21,16 +21,16 @@ const Skills = () => {
     },
     {
       category: "Analytics",
-      skills: ["Mixpanel", "Chartmogul"]
+      skills: ["Mixpanel", "Chartmogul", "Google Analytics", "Excel"]
     },
     {
       category: "Docs & Content",
-      skills: ["Grav CMS", "Sendgrid for Onboarding", "Webinars", "Tutorials", "Presentations"]
+      skills: ["Grav CMS", "Sendgrid for Onboarding", "Webinars", "Tutorials", "Presentations", "Loom"]
     }
   ];
 
   return (
-    <section id="skills" className="py-20 bg-secondary/30">
+    <section id="skills" className="py-20 bg-secondary/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">Core Skills</h2>

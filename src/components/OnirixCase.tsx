@@ -1,4 +1,3 @@
-
 import { Check, ExternalLink, Play } from "lucide-react";
 
 const OnirixCase = () => {
@@ -33,7 +32,7 @@ const OnirixCase = () => {
 
   const contentExamples = [
     {
-      title: "AI Assistant for WebAR Creation",
+      title: "AI Assistant for WebAR Creation (Spanish version)",
       url: "https://www.youtube.com/watch?v=Bv79o8Wy1qo",
       type: "YouTube",
       icon: "youtube"
@@ -59,7 +58,7 @@ const OnirixCase = () => {
   ];
 
   return (
-    <section id="onirix" className="py-20 bg-background">
+    <section id="onirix" className="py-20 bg-secondary/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">Use-case: Onirix</h2>
