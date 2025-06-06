@@ -1,4 +1,6 @@
 
+import { Check, ExternalLink, Play } from "lucide-react";
+
 const OnirixCase = () => {
   const metrics = [
     {
@@ -19,36 +21,40 @@ const OnirixCase = () => {
   ];
 
   const contributions = [
-    "Drove 10x ARR growth (2020-2024)",
-    "Led GTM and pricing strategies (ARPU from <100€ to 300€)",
-    "Improved user activation and conversion (60%+ improvement)",
-    "Managed scoring system (user quality tracking improved from <10% to 90%)",
-    "NPS consistently >80% since 2023",
-    "Led onboarding redesign and implemented A/B testing for adoption",
-    "Created and maintained technical documentation (https://docs.onirix.com)",
-    "Supported growth via content, events, SEO, webinars"
+    "Led a product-led growth (PLG) strategy that drove a 10x increase in ARR between 2020 (less than 30k ARR) and 2024 (400k ARR).",
+    "Designed and implemented GTM and pricing strategies that boosted ARPU from less than 100€ to 300€ over the same period.",
+    "Adapting product features and Revenue team strategies to get a 3,5x LTV increase (1000€ to 3500€).",
+    "Led a cross-functional team of engineers and designers to build digital products and templates resulting in an average NPS of 80%+ since 2023.",
+    "Redesigned onboarding flows to accelerate user time-to-value, improving activation rate by over 60% and increasing free-to-paid conversion.",
+    "Developed and implemented a comprehensive Scoring System to assess user acquisition quality, activation, and conversion. Successfully improved user action monitoring from under 10% to over 90%.",
+    "Introduced experimentation culture through A/B testing, resulting in improved feature adoption and retention KPIs.",
+    "Support a comprehensive marketing strategy (SEO, SEM, events, webinars, demos), creating 100+ content pieces and attending 20+ corporate events."
   ];
 
   const contentExamples = [
     {
       title: "AI Assistant for WebAR Creation",
       url: "https://www.youtube.com/watch?v=Bv79o8Wy1qo",
-      type: "YouTube"
+      type: "YouTube",
+      icon: "youtube"
     },
     {
       title: "Training Modules for Formative Experiences",
       url: "https://www.loom.com/share/408304aa8e5b4983bcd27ac2270dc529?sid=fb4f1aef-dae2-4b06-bd5e-0a68f7200ff5",
-      type: "Loom Tutorial"
+      type: "Loom Tutorial",
+      icon: "play"
     },
     {
       title: "Product Release Showcase",
       url: "https://www.loom.com/share/408304aa8e5b4983bcd27ac2270dc529?sid=3ce11d2d-bc8b-4446-bed0-471c38ba28fd",
-      type: "Loom Demo"
+      type: "Loom Demo",
+      icon: "play"
     },
     {
       title: "Quick Tips (In-Product Videos)",
       url: "https://www.loom.com/share/f106f5763e4d41fea188d654fd4d1029?sid=3a7d9ce5-99cb-4a8e-a1a2-2894a7df2f8c",
-      type: "Loom Tips"
+      type: "Loom Tips",
+      icon: "play"
     }
   ];
 
@@ -57,42 +63,64 @@ const OnirixCase = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">Use-case: Onirix</h2>
-          <p className="text-xl text-muted-foreground mb-8">Leading Web AR platform transformation</p>
-          
-          {/* Product Video */}
-          <div className="max-w-4xl mx-auto mb-16 bg-white rounded-lg p-8">
-            <video 
-              className="w-full h-auto rounded-lg shadow-lg"
-              controls
-              poster="https://www.onirix.com/wp-content/themes/onirix-sixteen-child/images/video-poster.jpg"
-            >
-              <source src="https://www.onirix.com/wp-content/themes/onirix-sixteen-child/videos/video-home--industry.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
+          <p className="text-xl text-muted-foreground mb-12">Leading Web AR platform transformation</p>
         </div>
 
-        {/* Key Metrics */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {metrics.map((metric, index) => (
-            <div key={index} className="text-center p-8 rounded-lg border border-border bg-card hover:shadow-lg transition-shadow">
-              <div className="text-4xl font-bold text-primary mb-2">{metric.value}</div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">{metric.title}</h3>
-              <p className="text-muted-foreground">{metric.description}</p>
-            </div>
-          ))}
+        {/* Video + Metrics Split Layout */}
+        <div className="grid lg:grid-cols-2 gap-12 mb-16 items-center">
+          {/* Video Section */}
+          <div className="bg-white rounded-lg p-8">
+            <iframe
+              src="https://www.loom.com/embed/408304aa8e5b4983bcd27ac2270dc529?sid=fb4f1aef-dae2-4b06-bd5e-0a68f7200ff5&autoplay=1&loop=1&hideEmbedTopBar=true"
+              className="w-full h-80 rounded-lg"
+              allowFullScreen
+              style={{ border: 'none' }}
+            ></iframe>
+          </div>
+
+          {/* Metrics Section */}
+          <div className="space-y-6">
+            {metrics.map((metric, index) => (
+              <div key={index} className="p-6 rounded-lg border border-border bg-card hover:shadow-lg transition-shadow">
+                <div className="text-3xl font-bold text-primary mb-2">{metric.value}</div>
+                <h3 className="text-lg font-semibold text-foreground mb-2">{metric.title}</h3>
+                <p className="text-muted-foreground">{metric.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Contributions */}
         <div className="mb-16">
           <h3 className="text-2xl font-semibold text-foreground mb-8 text-center">My Contributions as Lead Product Manager</h3>
-          <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-4 max-w-6xl mx-auto">
             {contributions.map((contribution, index) => (
               <div key={index} className="flex items-start gap-3 p-4 rounded-lg bg-secondary/10">
-                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <p className="text-foreground">{contribution}</p>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Documentation Block */}
+        <div className="mb-16 max-w-2xl mx-auto">
+          <div className="p-6 rounded-lg border border-border bg-card hover:shadow-lg transition-shadow">
+            <div className="flex items-center gap-3 mb-3">
+              <ExternalLink className="w-5 h-5 text-primary" />
+              <h4 className="text-lg font-semibold text-foreground">Technical Documentation</h4>
+            </div>
+            <p className="text-muted-foreground mb-4">
+              Responsible for the technical documentation of the product and its updating, as well as for the communication of the improvements included in each version deployment.
+            </p>
+            <a
+              href="https://docs.onirix.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
+            >
+              Visit Documentation <ExternalLink className="w-4 h-4" />
+            </a>
           </div>
         </div>
 
@@ -109,10 +137,11 @@ const OnirixCase = () => {
                 className="p-6 rounded-lg border border-border bg-card hover:border-primary/50 hover:shadow-lg transition-all duration-300 group"
               >
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-sm font-medium text-primary">{content.type}</span>
-                  <svg className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
+                  <div className="flex items-center gap-2">
+                    <Play className="w-4 h-4 text-primary" />
+                    <span className="text-sm font-medium text-primary">{content.type}</span>
+                  </div>
+                  <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
                 </div>
                 <h4 className="text-lg font-medium text-foreground group-hover:text-primary transition-colors">{content.title}</h4>
               </a>
