@@ -36,25 +36,29 @@ const OnirixCase = () => {
       title: "AI Assistant for WebAR Creation",
       url: "https://www.youtube.com/watch?v=Bv79o8Wy1qo",
       type: "YouTube",
-      icon: "youtube"
+      icon: "youtube",
+      thumbnail: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop"
     },
     {
       title: "Training Modules for Formative Experiences",
       url: "https://www.loom.com/share/408304aa8e5b4983bcd27ac2270dc529?sid=fb4f1aef-dae2-4b06-bd5e-0a68f7200ff5",
       type: "Loom Tutorial",
-      icon: "play"
+      icon: "play",
+      thumbnail: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop"
     },
     {
       title: "Product Release Showcase",
       url: "https://www.loom.com/share/408304aa8e5b4983bcd27ac2270dc529?sid=3ce11d2d-bc8b-4446-bed0-471c38ba28fd",
       type: "Loom Demo",
-      icon: "play"
+      icon: "play",
+      thumbnail: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=300&fit=crop"
     },
     {
       title: "Quick Tips (In-Product Videos)",
       url: "https://www.loom.com/share/f106f5763e4d41fea188d654fd4d1029?sid=3a7d9ce5-99cb-4a8e-a1a2-2894a7df2f8c",
       type: "Loom Tips",
-      icon: "play"
+      icon: "play",
+      thumbnail: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop"
     }
   ];
 
@@ -70,12 +74,17 @@ const OnirixCase = () => {
         <div className="grid lg:grid-cols-2 gap-12 mb-16 items-center">
           {/* Video Section */}
           <div className="bg-white rounded-lg p-8">
-            <iframe
-              src="https://www.loom.com/embed/408304aa8e5b4983bcd27ac2270dc529?sid=fb4f1aef-dae2-4b06-bd5e-0a68f7200ff5&autoplay=1&loop=1&hideEmbedTopBar=true"
+            <video
               className="w-full h-80 rounded-lg"
-              allowFullScreen
+              autoPlay
+              loop
+              muted
+              playsInline
               style={{ border: 'none' }}
-            ></iframe>
+            >
+              <source src="https://www.onirix.com/wp-content/themes/onirix-sixteen-child/videos/video-home--industry.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           {/* Metrics Section */}
@@ -105,9 +114,9 @@ const OnirixCase = () => {
 
         {/* Documentation Block */}
         <div className="mb-16 max-w-2xl mx-auto">
-          <div className="p-6 rounded-lg border border-border bg-card hover:shadow-lg transition-shadow">
+          <div className="p-6 rounded-lg border border-blue-200 bg-blue-50 hover:shadow-lg transition-shadow">
             <div className="flex items-center gap-3 mb-3">
-              <ExternalLink className="w-5 h-5 text-primary" />
+              <ExternalLink className="w-5 h-5 text-blue-600" />
               <h4 className="text-lg font-semibold text-foreground">Technical Documentation</h4>
             </div>
             <p className="text-muted-foreground mb-4">
@@ -117,7 +126,7 @@ const OnirixCase = () => {
               href="https://docs.onirix.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
+              className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors font-medium"
             >
               Visit Documentation <ExternalLink className="w-4 h-4" />
             </a>
@@ -134,16 +143,27 @@ const OnirixCase = () => {
                 href={content.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-6 rounded-lg border border-border bg-card hover:border-primary/50 hover:shadow-lg transition-all duration-300 group"
+                className="relative overflow-hidden rounded-lg border border-border bg-card hover:border-primary/50 hover:shadow-lg transition-all duration-300 group"
               >
-                <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-2">
-                    <Play className="w-4 h-4 text-primary" />
-                    <span className="text-sm font-medium text-primary">{content.type}</span>
+                <div className="relative">
+                  <img 
+                    src={content.thumbnail} 
+                    alt={content.title}
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
+                    <Play className="w-12 h-12 text-white" />
                   </div>
-                  <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                  <div className="absolute top-3 left-3">
+                    <span className="text-xs font-medium text-white bg-black/50 px-2 py-1 rounded">{content.type}</span>
+                  </div>
+                  <div className="absolute top-3 right-3">
+                    <ExternalLink className="w-4 h-4 text-white" />
+                  </div>
                 </div>
-                <h4 className="text-lg font-medium text-foreground group-hover:text-primary transition-colors">{content.title}</h4>
+                <div className="p-4">
+                  <h4 className="text-lg font-medium text-foreground group-hover:text-primary transition-colors">{content.title}</h4>
+                </div>
               </a>
             ))}
           </div>
