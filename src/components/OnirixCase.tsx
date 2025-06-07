@@ -58,7 +58,7 @@ const OnirixCase = () => {
   ];
 
   return (
-    <section id="onirix" className="py-20 bg-secondary/50">
+    <section id="onirix" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">Use-case: Onirix</h2>

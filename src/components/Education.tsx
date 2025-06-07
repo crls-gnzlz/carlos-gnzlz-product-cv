@@ -28,7 +28,7 @@ const Education = () => {
               </div>
               <div className="pt-4 border-t border-border">
                 <p className="text-sm text-foreground">
-                  <strong>Final thesis:</strong> Optimization problems
+                  <strong>Final degree project:</strong> Solution for multi depot vehicle and crew scheduling problems.
                 </p>
               </div>
             </div>

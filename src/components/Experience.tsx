@@ -1,4 +1,3 @@
-
 const Experience = () => {
   const experiences = [
     {
@@ -52,7 +51,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-secondary/20">
+    <section id="experience" className="py-20 bg-secondary/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">Work Experience</h2>
