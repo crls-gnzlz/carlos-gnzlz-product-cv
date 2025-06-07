@@ -1,24 +1,7 @@
+
 import { Check, ExternalLink, Play } from "lucide-react";
 
 const OnirixCase = () => {
-  const metrics = [
-    {
-      title: "Business Model Transformation",
-      value: "90%",
-      description: "of revenue from licensing in 2024 (under 10% in 2020)"
-    },
-    {
-      title: "ARR Growth",
-      value: "10x",
-      description: "ARR growth between 2020 and 2024"
-    },
-    {
-      title: "Global Reach",
-      value: "100+",
-      description: "recurrent clients in 25+ countries"
-    }
-  ];
-
   const contributions = [
     "Led a product-led growth (PLG) strategy that drove a 10x increase in ARR between 2020 and 2024.",
     "Designed and implemented GTM and pricing strategies that boosted ARPU 300% over the same period.",
@@ -62,41 +45,11 @@ const OnirixCase = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">Use-case: Onirix</h2>
-          <p className="text-xl text-muted-foreground mb-12">Leading global Web AR platform transformation</p>
-        </div>
-
-        {/* Video + Metrics Split Layout */}
-        <div className="grid lg:grid-cols-2 gap-12 mb-16 items-center">
-          {/* Video Section */}
-          <div className="bg-white rounded-lg p-8">
-            <video
-              className="w-full h-80 rounded-lg"
-              autoPlay
-              loop
-              muted
-              playsInline
-              style={{ border: 'none' }}
-            >
-              <source src="https://www.onirix.com/wp-content/themes/onirix-sixteen-child/videos/video-home--industry.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-
-          {/* Metrics Section */}
-          <div className="space-y-6">
-            {metrics.map((metric, index) => (
-              <div key={index} className="p-6 rounded-lg border border-border bg-card hover:shadow-lg transition-shadow">
-                <div className="text-3xl font-bold text-primary mb-2">{metric.value}</div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">{metric.title}</h3>
-                <p className="text-muted-foreground">{metric.description}</p>
-              </div>
-            ))}
-          </div>
+          <p className="text-xl text-muted-foreground">Leading global Web AR platform transformation</p>
         </div>
 
         {/* Contributions */}
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-foreground mb-8 text-center">My Contributions as Lead Product Manager</h3>
           <div className="grid md:grid-cols-2 gap-4 max-w-6xl mx-auto">
             {contributions.map((contribution, index) => (
               <div key={index} className="flex items-start gap-3 p-4 rounded-lg bg-secondary/10">

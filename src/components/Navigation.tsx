@@ -6,6 +6,7 @@ const Navigation = () => {
   const [activeSection, setActiveSection] = useState("hero");
 
   const navItems = [
+    { id: "strategic-vision", label: "Strategic Vision" },
     { id: "achievements", label: "Achievements" },
     { id: "skills", label: "Skills" },
     { id: "onirix", label: "Use-case: Onirix" },

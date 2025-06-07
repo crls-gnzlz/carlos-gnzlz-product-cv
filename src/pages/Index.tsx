@@ -1,6 +1,7 @@
 
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
+import StrategicVision from "@/components/StrategicVision";
 import Achievements from "@/components/Achievements";
 import Skills from "@/components/Skills";
 import OnirixCase from "@/components/OnirixCase";
@@ -14,6 +15,7 @@ const Index = () => {
       <Navigation />
       <main>
         <Hero />
+        <StrategicVision />
         <Achievements />
         <Skills />
         <OnirixCase />
