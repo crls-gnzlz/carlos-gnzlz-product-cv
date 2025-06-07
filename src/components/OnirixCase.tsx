@@ -1,5 +1,5 @@
 
-import { Check, ExternalLink, Play } from "lucide-react";
+import { Check, ExternalLink, Play, Globe } from "lucide-react";
 
 const OnirixCase = () => {
   const contributions = [
@@ -45,7 +45,21 @@ const OnirixCase = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">Use-case: Onirix</h2>
-          <p className="text-xl text-muted-foreground">Leading global Web AR platform transformation</p>
+          <p className="text-xl text-muted-foreground mb-6">Leading global Web AR platform transformation</p>
+          
+          {/* Onirix Website Link */}
+          <div className="mb-8">
+            <a
+              href="https://www.onirix.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-6 py-3 bg-primary/10 hover:bg-primary/20 rounded-full border border-primary/20 hover:border-primary/40 transition-all duration-300 group"
+            >
+              <Globe className="w-5 h-5 text-primary" />
+              <span className="text-primary font-medium">Visit Onirix Platform</span>
+              <ExternalLink className="w-4 h-4 text-primary group-hover:translate-x-1 transition-transform" />
+            </a>
+          </div>
         </div>
 
         {/* Contributions */}

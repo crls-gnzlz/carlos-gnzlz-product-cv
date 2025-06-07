@@ -19,10 +19,10 @@ const StrategicVision = () => {
   ];
 
   return (
-    <section id="strategic-vision" className="py-12 bg-secondary/20">
+    <section id="strategic-vision" className="py-8 bg-secondary/20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-semibold text-foreground mb-4">Turning strategic vision into products that make a difference</h2>
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-medium text-foreground mb-4">Turning strategic vision into products that make a difference</h2>
         </div>
 
         {/* Video + Metrics Split Layout */}
