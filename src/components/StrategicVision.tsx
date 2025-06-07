@@ -19,10 +19,10 @@ const StrategicVision = () => {
   ];
 
   return (
-    <section id="strategic-vision" className="py-20 bg-secondary/20">
+    <section id="strategic-vision" className="py-12 bg-secondary/20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Turning strategic vision into products that make a difference</h2>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-semibold text-foreground mb-4">Turning strategic vision into products that make a difference</h2>
         </div>
 
         {/* Video + Metrics Split Layout */}
@@ -45,7 +45,7 @@ const StrategicVision = () => {
           {/* Metrics Section */}
           <div className="space-y-6">
             {metrics.map((metric, index) => (
-              <div key={index} className="p-6 rounded-lg border border-border bg-card hover:shadow-lg transition-shadow">
+              <div key={index} className="p-6 rounded-lg border border-border bg-card">
                 <div className="text-3xl font-bold text-primary mb-2">{metric.value}</div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">{metric.title}</h3>
                 <p className="text-muted-foreground">{metric.description}</p>

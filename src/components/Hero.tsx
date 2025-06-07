@@ -3,7 +3,7 @@ import { MapPin, Mail, Linkedin } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="hero" className="min-h-[60vh] pt-24 md:pt-20 flex items-center justify-center bg-gradient-to-br from-background to-secondary/20 pb-8">
+    <section id="hero" className="min-h-[50vh] pt-24 md:pt-20 flex items-center justify-center bg-gradient-to-br from-background to-secondary/20 pb-4">
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-2 animate-fade-in">

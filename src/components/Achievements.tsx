@@ -30,8 +30,8 @@ const Achievements = () => {
         
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {achievements.map((achievement, index) => (
-            <div key={index} className="group p-6 rounded-lg transition-all duration-300 hover:shadow-lg bg-background">
-              <div className="flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-6 group-hover:bg-primary/20 transition-colors">
+            <div key={index} className="p-6 rounded-lg bg-background">
+              <div className="flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-6">
                 <achievement.icon size={32} className="text-primary" />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-4">{achievement.title}</h3>
