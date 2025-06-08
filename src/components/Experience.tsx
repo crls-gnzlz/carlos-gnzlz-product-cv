@@ -1,4 +1,5 @@
 
+
 const Experience = () => {
   const experiences = [
     {
@@ -6,12 +7,7 @@ const Experience = () => {
       period: "2019 – Present",
       role: "Co-founder & Lead Product Manager",
       description: "Leading product strategy and growth for a Web AR platform. Key contributions include 10x ARR growth, global expansion to 25+ countries, and successful PLG implementation.",
-      highlights: [
-        "Co-founded leading Web AR platform",
-        "Drove 10x ARR growth (2020-2024)",
-        "Implemented PLG strategy achieving 90%+ recurring revenue",
-        "Global reach: 100+ clients in 25+ countries"
-      ]
+      highlights: []
     },
     {
       company: "Neosentec",
@@ -20,7 +16,8 @@ const Experience = () => {
       description: "Focused on wearable tech, AR, and client solutions. Led innovation initiatives and operational excellence.",
       highlights: [
         "Responsible for strategic decisions, study of market possibilities, project and customer management.",
-        "Development of different solutions in industry (Unilever, Thyssenkrupp, EDP, Red Cross, to mention some of them); and internal products like Lazzus (an app to help visually impaired people)."
+        "Development of different solutions in industry (Unilever, Thyssenkrupp, EDP, Red Cross, KPMG)",
+        "Internal product developement: Lazzus - Android and iOS app to help visually impaired people."
       ]
     },
     {
@@ -31,7 +28,7 @@ const Experience = () => {
       highlights: [
         ".Net Web application analyst and back-end developer C#: MVC & Entity Framework.",
         "Front-end development (Javascript, JQuery, CSS, HTML).",
-        "Database development (SQL Server 2012, stored procedures, scripting), analysis and optimization (indexes, execution plans, SQL Server Profiler, Tuning Advisor)."
+        "Database development and optimization (SQL Server 2012, stored procedures, indexes, Profiler and execution plans)."
       ]
     },
     {
@@ -47,6 +44,13 @@ const Experience = () => {
       ]
     }
   ];
+
+  const scrollToOnirix = () => {
+    const onirixSection = document.getElementById('onirix');
+    if (onirixSection) {
+      onirixSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section id="experience" className="py-20 bg-secondary/50">
@@ -80,18 +84,32 @@ const Experience = () => {
                     <h4 className="text-lg font-medium text-primary mb-3">{exp.company}</h4>
                     <p className="text-muted-foreground mb-4">{exp.description}</p>
                     
-                    <div className={
-                      exp.company === "Neosentec" || exp.company === "Sngular" 
-                        ? "space-y-2" 
-                        : "grid md:grid-cols-2 gap-2"
-                    }>
-                      {exp.highlights.map((highlight, highlightIndex) => (
-                        <div key={highlightIndex} className="flex items-center gap-2">
-                          <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                          <span className="text-sm text-foreground">{highlight}</span>
-                        </div>
-                      ))}
-                    </div>
+                    {exp.company === "Onirix" ? (
+                      <div className="mt-6">
+                        <button
+                          onClick={scrollToOnirix}
+                          className="inline-flex items-center gap-3 px-6 py-3 bg-primary/10 hover:bg-primary/20 rounded-lg border border-primary/20 hover:border-primary/40 transition-all duration-300 group"
+                        >
+                          <span className="text-primary font-medium">View detailed Onirix use-case</span>
+                          <svg className="w-4 h-4 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                          </svg>
+                        </button>
+                      </div>
+                    ) : (
+                      <div className={
+                        exp.company === "Neosentec" || exp.company === "Sngular" 
+                          ? "space-y-2" 
+                          : "grid md:grid-cols-2 gap-2"
+                      }>
+                        {exp.highlights.map((highlight, highlightIndex) => (
+                          <div key={highlightIndex} className="flex items-center gap-2">
+                            <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                            <span className="text-sm text-foreground">{highlight}</span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
@@ -104,3 +122,4 @@ const Experience = () => {
 };
 
 export default Experience;
+
