@@ -1,3 +1,4 @@
+
 const Experience = () => {
   const experiences = [
     {
@@ -79,7 +80,11 @@ const Experience = () => {
                     <h4 className="text-lg font-medium text-primary mb-3">{exp.company}</h4>
                     <p className="text-muted-foreground mb-4">{exp.description}</p>
                     
-                    <div className="grid md:grid-cols-2 gap-2">
+                    <div className={
+                      exp.company === "Neosentec" || exp.company === "Sngular" 
+                        ? "space-y-2" 
+                        : "grid md:grid-cols-2 gap-2"
+                    }>
                       {exp.highlights.map((highlight, highlightIndex) => (
                         <div key={highlightIndex} className="flex items-center gap-2">
                           <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
