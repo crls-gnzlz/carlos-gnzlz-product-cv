@@ -18,10 +18,8 @@ const Experience = () => {
       role: "Co-founder, Innovation & Operations Manager",
       description: "Focused on wearable tech, AR, and client solutions. Led innovation initiatives and operational excellence.",
       highlights: [
-        "Co-founded wearable tech company",
-        "Specialized in AR and emerging technologies",
-        "Managed client solutions and operations",
-        "Drove innovation strategy"
+        "Responsible for strategic decisions, study of market possibilities, project and customer management.",
+        "Development of different solutions in industry (Unilever, Thyssenkrupp, EDP, Red Cross, to mention some of them); and internal products like Lazzus (an app to help visually impaired people)."
       ]
     },
     {
@@ -30,10 +28,9 @@ const Experience = () => {
       role: "Software Developer",
       description: "Full-stack development with focus on back-end and front-end technologies.",
       highlights: [
-        "Back-end development",
-        "Front-end development",
-        "Full-stack solutions",
-        "Technical implementation"
+        ".Net Web application analyst and back-end developer C#: MVC & Entity Framework.",
+        "Front-end development (Javascript, JQuery, CSS, HTML).",
+        "Database development (SQL Server 2012, stored procedures, scripting), analysis and optimization (indexes, execution plans, SQL Server Profiler, Tuning Advisor)."
       ]
     },
     {
