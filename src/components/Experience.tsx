@@ -1,5 +1,3 @@
-
-
 const Experience = () => {
   const experiences = [
     {
@@ -37,10 +35,10 @@ const Experience = () => {
       role: "Junior Developer",
       description: "Front-end development and database management.",
       highlights: [
-        "Front-end development",
-        "Database management",
         "Early career development",
-        "Technical foundations"
+        "WinForm applications developer (C#, Visual Studio, NHibernate).",
+        "Database developer (T-SQL, SQL Server).",
+        "Front-end development (jsp, jQuery, HTML, CSS)."
       ]
     }
   ];
@@ -97,11 +95,7 @@ const Experience = () => {
                         </button>
                       </div>
                     ) : (
-                      <div className={
-                        exp.company === "Neosentec" || exp.company === "Sngular" 
-                          ? "space-y-2" 
-                          : "grid md:grid-cols-2 gap-2"
-                      }>
+                      <div className="space-y-2">
                         {exp.highlights.map((highlight, highlightIndex) => (
                           <div key={highlightIndex} className="flex items-center gap-2">
                             <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
@@ -122,4 +116,3 @@ const Experience = () => {
 };
 
 export default Experience;
-
