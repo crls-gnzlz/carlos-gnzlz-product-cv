@@ -1,3 +1,6 @@
+
+import { ArrowUp } from "lucide-react";
+
 const Experience = () => {
   const experiences = [
     {
@@ -89,9 +92,7 @@ const Experience = () => {
                           className="inline-flex items-center gap-3 px-6 py-3 bg-primary/10 hover:bg-primary/20 rounded-lg border border-primary/20 hover:border-primary/40 transition-all duration-300 group"
                         >
                           <span className="text-primary font-medium">View detailed Onirix use-case</span>
-                          <svg className="w-4 h-4 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                          </svg>
+                          <ArrowUp className="w-4 h-4 text-primary group-hover:-translate-y-1 transition-transform" />
                         </button>
                       </div>
                     ) : (
