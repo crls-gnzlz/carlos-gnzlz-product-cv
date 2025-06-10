@@ -1,4 +1,5 @@
-import { Check, ExternalLink, Play, Globe } from "lucide-react";
+
+import { Check, ExternalLink, Play, Globe, Video, Youtube } from "lucide-react";
 
 const OnirixCase = () => {
   const contributions = [
@@ -17,19 +18,19 @@ const OnirixCase = () => {
       title: "Training Modules for Formative Experiences",
       url: "https://www.loom.com/share/408304aa8e5b4983bcd27ac2270dc529?sid=fb4f1aef-dae2-4b06-bd5e-0a68f7200ff5",
       type: "Loom Tutorial",
-      icon: "play"
+      icon: "loom"
     },
     {
       title: "Product Release Showcase",
       url: "https://www.loom.com/share/408304aa8e5b4983bcd27ac2270dc529?sid=3ce11d2d-bc8b-4446-bed0-471c38ba28fd",
       type: "Loom Demo",
-      icon: "play"
+      icon: "loom"
     },
     {
       title: "Quick Tips (In-Product Videos)",
       url: "https://www.loom.com/share/f106f5763e4d41fea188d654fd4d1029?sid=3a7d9ce5-99cb-4a8e-a1a2-2894a7df2f8c",
       type: "Loom Tips",
-      icon: "play"
+      icon: "loom"
     },
     {
       title: "AI Assistant for WebAR Creation (Spanish version)",
@@ -38,6 +39,17 @@ const OnirixCase = () => {
       icon: "youtube"
     }
   ];
+
+  const getIcon = (iconType: string) => {
+    switch (iconType) {
+      case "loom":
+        return <Video className="w-6 h-6 text-primary" />;
+      case "youtube":
+        return <Youtube className="w-6 h-6 text-primary" />;
+      default:
+        return <Play className="w-6 h-6 text-primary" />;
+    }
+  };
 
   return (
     <section id="onirix" className="py-20 bg-background">
@@ -107,7 +119,7 @@ const OnirixCase = () => {
                 className="flex items-center gap-4 p-6 rounded-lg border border-border bg-card hover:border-primary/50 hover:shadow-lg transition-all duration-300 group"
               >
                 <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full group-hover:bg-primary/20 transition-colors">
-                  <Play className="w-6 h-6 text-primary" />
+                  {getIcon(content.icon)}
                 </div>
                 <div className="flex-1">
                   <h4 className="text-lg font-medium text-foreground group-hover:text-primary transition-colors mb-1">{content.title}</h4>
