@@ -1,4 +1,3 @@
-
 import { Check, ExternalLink, Play, Globe } from "lucide-react";
 
 const OnirixCase = () => {
@@ -14,12 +13,6 @@ const OnirixCase = () => {
   ];
 
   const contentExamples = [
-    {
-      title: "AI Assistant for WebAR Creation (Spanish version)",
-      url: "https://www.youtube.com/watch?v=Bv79o8Wy1qo",
-      type: "YouTube",
-      icon: "youtube"
-    },
     {
       title: "Training Modules for Formative Experiences",
       url: "https://www.loom.com/share/408304aa8e5b4983bcd27ac2270dc529?sid=fb4f1aef-dae2-4b06-bd5e-0a68f7200ff5",
@@ -37,6 +30,12 @@ const OnirixCase = () => {
       url: "https://www.loom.com/share/f106f5763e4d41fea188d654fd4d1029?sid=3a7d9ce5-99cb-4a8e-a1a2-2894a7df2f8c",
       type: "Loom Tips",
       icon: "play"
+    },
+    {
+      title: "AI Assistant for WebAR Creation (Spanish version)",
+      url: "https://www.youtube.com/watch?v=Bv79o8Wy1qo",
+      type: "YouTube",
+      icon: "youtube"
     }
   ];
 
