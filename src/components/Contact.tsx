@@ -1,67 +1,62 @@
-import { Mail, Linkedin, MapPin } from "lucide-react";
+
+import { Mail, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-secondary/50">
+    <footer id="contact" className="py-12 bg-primary">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Let's Connect</h2>
-          <p className="text-xl text-muted-foreground">Ready to discuss your next product challenge</p>
-        </div>
-        
-        <div className="max-w-2xl mx-auto">
-          <div className="grid gap-6">
-            {/* Email */}
-            <a
-              href="mailto:carlos.4g@gmail.com"
-              className="group p-6 rounded-lg border border-border bg-card hover:border-primary/50 hover:shadow-lg transition-all duration-300"
-            >
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <Mail size={24} className="text-primary" />
+        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+          {/* Contact Info Column */}
+          <div className="flex-1">
+            <h2 className="text-2xl font-bold text-primary-foreground mb-6">Let's Connect</h2>
+            
+            <div className="grid gap-4 max-w-md">
+              {/* Email */}
+              <a
+                href="mailto:carlos.4g@gmail.com"
+                className="group p-4 rounded-lg border border-primary-foreground/20 bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-all duration-300"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-primary-foreground/20 rounded-full flex items-center justify-center group-hover:bg-primary-foreground/30 transition-colors">
+                    <Mail size={20} className="text-primary-foreground" />
+                  </div>
+                  <div>
+                    <h3 className="text-base font-semibold text-primary-foreground">Email</h3>
+                    <p className="text-primary-foreground/80 text-sm">carlos.4g@gmail.com</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">Email</h3>
-                  <p className="text-muted-foreground">carlos.4g@gmail.com</p>
-                </div>
-              </div>
-            </a>
+              </a>
 
-            {/* LinkedIn */}
-            <a
-              href="https://www.linkedin.com/in/carlos-gnzlz/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group p-6 rounded-lg border border-border bg-card hover:border-primary/50 hover:shadow-lg transition-all duration-300"
-            >
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <Linkedin size={24} className="text-primary" />
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/carlos-gnzlz/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-4 rounded-lg border border-primary-foreground/20 bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-all duration-300"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-primary-foreground/20 rounded-full flex items-center justify-center group-hover:bg-primary-foreground/30 transition-colors">
+                    <Linkedin size={20} className="text-primary-foreground" />
+                  </div>
+                  <div>
+                    <h3 className="text-base font-semibold text-primary-foreground">LinkedIn</h3>
+                    <p className="text-primary-foreground/80 text-sm">Connect with me professionally</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">LinkedIn</h3>
-                  <p className="text-muted-foreground">Connect with me professionally</p>
-                </div>
-              </div>
-            </a>
-
-            {/* Location */}
-            <div className="p-6 rounded-lg border border-border bg-card">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <MapPin size={24} className="text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground">Location</h3>
-                  <p className="text-muted-foreground">Barcelona, Spain</p>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
 
-          <div className="text-center mt-8">
-            <Button asChild size="lg">
+          {/* CTA Column */}
+          <div className="flex-shrink-0 text-center lg:text-right">
+            <p className="text-primary-foreground/90 mb-4">Ready to discuss your next product challenge?</p>
+            <Button 
+              asChild 
+              size="lg" 
+              variant="secondary"
+              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+            >
               <a href="mailto:carlos.4g@gmail.com">
                 Get In Touch
               </a>
@@ -69,7 +64,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 
