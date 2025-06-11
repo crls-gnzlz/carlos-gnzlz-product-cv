@@ -1,73 +1,48 @@
-# Welcome to your Lovable project
+Carlos González - Product Manager CV Website
+Welcome to the source repository for Carlos González's Product Manager CV website, a clean, modern, and responsive personal portfolio and CV site built to showcase professional experience, skills, and contact information.
 
-## Project info
+About
+This website serves as an interactive, easy-to-navigate digital CV for Carlos González, highlighting his expertise in product management, SaaS, and leadership roles. It is designed to be accessible and visually appealing on both desktop and mobile devices.
 
-**URL**: https://lovable.dev/projects/4495efb0-0b95-4678-8f3d-1c8a76c5307c
+You can visit the live site here:
+https://carlos-gnzlz-product-cv.lovable.app/
 
-## How can I edit this code?
+Features
+Professional summary and detailed work experience
 
-There are several ways of editing your application.
+Skills and technologies section
 
-**Use Lovable**
+Projects and achievements showcase
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4495efb0-0b95-4678-8f3d-1c8a76c5307c) and start prompting.
+Contact information and links to social profiles
 
-Changes made via Lovable will be committed automatically to this repo.
+Responsive design using modern CSS frameworks
 
-**Use your preferred IDE**
+Fast loading and SEO optimized
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Technology Stack
+Framework: React (with Vite for bundling)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Styling: Tailwind CSS for utility-first styling
 
-Follow these steps:
+Hosting: Deployed on Lovable.app platform
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Additional tools: Custom components for clean UI/UX
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Getting Started
+To run the project locally:
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/carlos-cv-website.git
+cd carlos-cv-website
+npm install
 npm run dev
-```
+Open http://localhost:3000 to view it in your browser.
 
-**Edit a file directly in GitHub**
+Contributing
+Feel free to fork the project and submit pull requests for improvements or updates. For major changes, please open an issue first to discuss what you would like to change.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/4495efb0-0b95-4678-8f3d-1c8a76c5307c) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+License
+This project is open source under the MIT License.
