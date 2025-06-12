@@ -40,6 +40,7 @@ const StrategicVision = () => {
               <source src="https://www.onirix.com/wp-content/themes/onirix-sixteen-child/videos/video-home--industry.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+            <p className="text-muted-foreground text-sm mt-3 text-center">Onirix: Web AR SaaS platform</p>
           </div>
 
           {/* Metrics Section */}
