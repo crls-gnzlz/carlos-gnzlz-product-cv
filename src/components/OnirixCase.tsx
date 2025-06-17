@@ -1,4 +1,3 @@
-
 import { Check, ExternalLink, Play, Globe, Video, Youtube } from "lucide-react";
 
 const OnirixCase = () => {
@@ -16,19 +15,19 @@ const OnirixCase = () => {
   const contentExamples = [
     {
       title: "Training Modules for Formative Experiences",
-      url: "https://www.loom.com/share/408304aa8e5b4983bcd27ac2270dc529?sid=fb4f1aef-dae2-4b06-bd5e-0a68f7200ff5",
+      url: "https://drive.google.com/file/d/1PdQnkMLce4mBdwxcBBCODDcg9ScyVCjL/view?usp=share_link",
       type: "Loom Tutorial",
       icon: "loom"
     },
     {
       title: "Product Release Showcase",
-      url: "https://www.loom.com/share/408304aa8e5b4983bcd27ac2270dc529?sid=3ce11d2d-bc8b-4446-bed0-471c38ba28fd",
+      url: "https://drive.google.com/file/d/1bVD4h_BI3OH2kkxCjq-xOsjWtUQxNvDn/view?usp=share_link",
       type: "Loom Demo",
       icon: "loom"
     },
     {
       title: "Quick Tips (In-Product Videos)",
-      url: "https://www.loom.com/share/f106f5763e4d41fea188d654fd4d1029?sid=3a7d9ce5-99cb-4a8e-a1a2-2894a7df2f8c",
+      url: "https://drive.google.com/file/d/1PdQnkMLce4mBdwxcBBCODDcg9ScyVCjL/view?usp=share_link",
       type: "Loom Tips",
       icon: "loom"
     },
