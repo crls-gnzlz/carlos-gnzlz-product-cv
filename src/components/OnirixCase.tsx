@@ -1,3 +1,4 @@
+
 import { Check, ExternalLink, Play, Globe, Video, Youtube } from "lucide-react";
 
 const OnirixCase = () => {
@@ -27,7 +28,7 @@ const OnirixCase = () => {
     },
     {
       title: "Quick Tips (In-Product Videos)",
-      url: "https://drive.google.com/file/d/1PdQnkMLce4mBdwxcBBCODDcg9ScyVCjL/view?usp=share_link",
+      url: "https://drive.google.com/file/d/1EbFlB1VYHbkl2sMngqvifgdZzomXFn33/view?usp=share_link",
       type: "Loom Tips",
       icon: "loom"
     },
