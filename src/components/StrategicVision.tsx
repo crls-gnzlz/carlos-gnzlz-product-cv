@@ -30,7 +30,7 @@ const StrategicVision = () => {
           {/* Video Section */}
           <div className="bg-white rounded-lg p-8">
             <video
-              className="w-full h-80 rounded-lg"
+              className="w-full h-96 rounded-lg"
               autoPlay
               loop
               muted
