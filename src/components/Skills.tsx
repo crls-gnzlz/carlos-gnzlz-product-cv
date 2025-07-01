@@ -5,11 +5,11 @@ const Skills = () => {
   const skillCategories = [
     {
       category: "Product Strategy",
-      skills: ["GTM", "Opportunity Identification", "Long-term Vision"]
+      skills: ["GTM", "Opportunity Identification", "Long-term Vision", "Partnerships"]
     },
     {
       category: "Cross-functional Leadership",
-      skills: ["Engineering Teams", "UX Teams", "Marketing", "Customer Success"]
+      skills: ["Engineering Teams", "UX Teams", "Marketing", "Customer Success", "Sales"]
     },
     {
       category: "Agile Roadmap Planning",

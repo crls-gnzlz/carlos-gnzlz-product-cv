@@ -7,7 +7,7 @@ const OnirixCase = () => {
     "Designed and implemented GTM and pricing strategies that boosted ARPU 300% over the same period.",
     "Adapting product features and Revenue team strategies to get a 3,5x LTV increase.",
     "Led a cross-functional team of engineers and designers to build digital products and templates resulting in an average NPS of 80%+ since 2023.",
-    "Redesigned onboarding flows to accelerate user time-to-value, improving activation rate by over 60% and increasing free-to-paid conversion.",
+    "Creation of onboarding flows to accelerate activation and time-to-value, increasing free-to-paid conversion.",
     "Developed and implemented a comprehensive Scoring System to assess user acquisition quality, activation, and conversion.",
     "Introduced experimentation culture through A/B testing, resulting in improved feature adoption and retention KPIs.",
     "Support a comprehensive marketing strategy (SEO, SEM, events, webinars, demos), creating 100+ content pieces and attending 20+ corporate events."
