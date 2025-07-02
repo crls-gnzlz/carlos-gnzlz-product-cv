@@ -42,12 +42,12 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-secondary/80 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-primary backdrop-blur-md border-b border-primary-foreground/20">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <button
             onClick={() => scrollToSection("hero")}
-            className="text-xl font-bold text-foreground hover:text-primary transition-colors"
+            className="text-xl font-bold text-primary-foreground hover:text-primary-foreground/80 transition-colors"
           >
             Carlos González
           </button>
@@ -58,8 +58,8 @@ const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
-                  activeSection === item.id ? "text-primary" : "text-muted-foreground"
+                className={`text-sm font-medium transition-colors hover:text-primary-foreground/80 ${
+                  activeSection === item.id ? "text-primary-foreground" : "text-primary-foreground/70"
                 }`}
               >
                 {item.label}
@@ -70,7 +70,7 @@ const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2"
+            className="md:hidden p-2 text-primary-foreground"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -78,13 +78,13 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-border">
+          <div className="md:hidden py-4 border-t border-primary-foreground/20">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`block w-full text-left py-2 text-sm font-medium transition-colors hover:text-primary ${
-                  activeSection === item.id ? "text-primary" : "text-muted-foreground"
+                className={`block w-full text-left py-2 text-sm font-medium transition-colors hover:text-primary-foreground/80 ${
+                  activeSection === item.id ? "text-primary-foreground" : "text-primary-foreground/70"
                 }`}
               >
                 {item.label}
