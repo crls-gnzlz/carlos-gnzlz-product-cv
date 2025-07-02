@@ -1,5 +1,5 @@
 
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
@@ -42,24 +42,6 @@ const Contact = () => {
                   <div>
                     <h3 className="text-base font-semibold text-primary-foreground">LinkedIn</h3>
                     <p className="text-primary-foreground/80 text-sm">Connect with me professionally</p>
-                  </div>
-                </div>
-              </a>
-
-              {/* GitHub */}
-              <a
-                href="https://github.com/crls-gnzlz"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group p-4 rounded-lg border border-primary-foreground/20 bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-all duration-300"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-primary-foreground/20 rounded-full flex items-center justify-center group-hover:bg-primary-foreground/30 transition-colors">
-                    <Github size={20} className="text-primary-foreground" />
-                  </div>
-                  <div>
-                    <h3 className="text-base font-semibold text-primary-foreground">GitHub</h3>
-                    <p className="text-primary-foreground/80 text-sm">Check out my projects</p>
                   </div>
                 </div>
               </a>

@@ -13,7 +13,7 @@ const Skills = () => {
     },
     {
       category: "Agile Roadmap Planning",
-      skills: ["JIRA", "Google Sheets", "Excel"]
+      skills: ["JIRA", "Google Sheets", "Excel", "Kanban / Scrum boards", "Impact / effort matrix", "OKR alignment"]
     },
     {
       category: "Engagement & Activation",
