@@ -7,7 +7,7 @@ const Experience = () => {
       company: "Onirix",
       period: "2019 – Present",
       role: "Co-founder & Lead Product Manager",
-      description: "Leading product strategy and growth for a Web AR platform. Key contributions include 10x ARR growth, global expansion to 25+ countries, and successful PLG implementation.",
+      description: "Leading product strategy and growth for a Web AR platform. Key contributions include 13x ARR growth, global expansion to 25+ countries, and successful PLG implementation.",
       highlights: []
     },
     {
