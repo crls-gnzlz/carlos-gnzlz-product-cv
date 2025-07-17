@@ -1,4 +1,5 @@
 
+
 const StrategicVision = () => {
   const metrics = [
     {
@@ -47,8 +48,8 @@ const StrategicVision = () => {
           <div className="space-y-6">
             {metrics.map((metric, index) => (
               <div key={index} className="p-6 rounded-lg border border-border bg-card">
-                <div className="text-3xl font-bold text-primary mb-2">{metric.value}</div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">{metric.title}</h3>
+                <div className="text-3xl font-bold text-primary mb-2">{metric.value}</div>
                 <p className="text-muted-foreground">{metric.description}</p>
               </div>
             ))}
@@ -60,3 +61,4 @@ const StrategicVision = () => {
 };
 
 export default StrategicVision;
+
