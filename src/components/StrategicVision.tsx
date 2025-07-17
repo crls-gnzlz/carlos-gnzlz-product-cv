@@ -2,19 +2,19 @@
 const StrategicVision = () => {
   const metrics = [
     {
-      title: "Business Model Transformation",
-      value: "90%",
-      description: "of revenue from licensing in 2024 (under 10% in 2020)"
-    },
-    {
       title: "ARR Growth",
-      value: "10x",
-      description: "ARR growth between 2020 and 2024"
+      value: "13x",
+      description: "of ARR growth between 2020 and 2024"
     },
     {
       title: "Global Reach",
       value: "100+",
-      description: "recurrent clients in 25+ countries"
+      description: "countries using Onirix, with recurrent clients in 25+"
+    },
+    {
+      title: "Business Model Transformation",
+      value: "90%",
+      description: "of revenue from licensing in 2024 (under 5% in 2020)"
     }
   ];
 
