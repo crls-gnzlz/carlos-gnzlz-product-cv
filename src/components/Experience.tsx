@@ -13,7 +13,7 @@ const Experience = () => {
     {
       company: "Neosentec",
       period: "2014 – 2018",
-      role: "Co-founder, Innovation & Operations Manager",
+      role: "Innovation & Operations Manager",
       description: "Focused on wearable tech, AR, and client solutions. Led innovation initiatives and operational excellence.",
       highlights: [
         "Responsible for strategic decisions, study of market possibilities, project and customer management.",
