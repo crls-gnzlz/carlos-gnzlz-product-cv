@@ -17,11 +17,11 @@ const Skills = () => {
     },
     {
       category: "Engagement & Activation",
-      skills: ["KPI-driven", "NPS", "Onboarding completion", "PLG Tactics", "Scoring systems"]
+      skills: ["KPI-driven", "NPS", "Onboarding completion", "PLG Tactics", "Scoring systems", "A/B Testing"]
     },
     {
-      category: "Analytics",
-      skills: ["Mixpanel", "Chartmogul", "Google Analytics", "Excel"]
+      category: "Metrics & Analytics",
+      skills: ["Mixpanel", "Google Analytics", "SQL", "BigQuery", "ARR", "ARPU", "MAU", "D7-D30", "LTV"]
     },
     {
       category: "Docs & Content",
