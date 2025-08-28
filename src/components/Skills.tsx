@@ -5,15 +5,15 @@ const Skills = () => {
   const skillCategories = [
     {
       category: "Product Strategy",
-      skills: ["GTM", "Opportunity Identification", "Long-term Vision", "Partnerships"]
+      skills: ["GTM", "Discovery", "Pre-sales", "Negotiation", "CRM", "Events", "Long-term Vision", "Partnerships"]
     },
     {
       category: "Cross-functional Leadership",
-      skills: ["Engineering Teams", "UX Teams", "Marketing", "Customer Success", "Sales"]
+      skills: ["Engineering Teams", "UX Teams", "Marketing", "Customer Success", "Sales", "Compliance", "R&D"]
     },
     {
       category: "Agile Roadmap Planning",
-      skills: ["JIRA", "Google Sheets", "Excel", "Kanban / Scrum boards", "Impact / effort matrix", "OKR alignment"]
+      skills: ["JIRA", "Prioritization", "Agile ceremonies", "PRDs", "Documentation", "OKR alignment"]
     },
     {
       category: "Engagement & Activation",
@@ -25,7 +25,7 @@ const Skills = () => {
     },
     {
       category: "Docs & Content",
-      skills: ["Grav CMS", "Sendgrid for Onboarding", "Webinars", "Tutorials", "Presentations", "Loom"]
+      skills: ["Tech docs (API, SDK, tools)", "SEO", "Decks", "Webinars", "Tutorials", "Presentations", "Loom"]
     }
   ];
 
